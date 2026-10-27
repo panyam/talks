@@ -22,6 +22,7 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: stable
+          cache: false  # no go.sum here, we only go install slyds
       - name: Install slyds
         run: go install github.com/panyam/slyds@v0.2.10
       - name: Build site
