@@ -1,0 +1,25 @@
+<div class="slide" data-layout="content">
+  <h1 data-slot="title">AI is an amplifier</h1>
+  <div data-slot="body">
+    <div class="amp">
+      <div class="phase-box good"><h3>Good system + AI</h3><p>Clear ownership, solid tests, fast CI, small PRs.</p><p class="quip">Gets better, faster.</p></div>
+      <div class="phase-box bad"><h3>Messy system + AI</h3><p>Flaky tests, vague tickets, one person who understands deploys.</p><p class="quip">Gets messier, faster.</p></div>
+    </div>
+    <ul class="tight">
+      <li>90% of ~5,000 respondents use AI at work, and over 80% believe it made them more productive.</li>
+      <li>DORA found more AI adoption goes with higher throughput and lower stability. DX's 2026 data shows the same pattern: PRs per engineer up 37%, change confidence down 6%.</li>
+    </ul>
+    <div class="example step">
+      <div class="ex-label">A familiar story (illustrative)</div>
+      <p>Team B rolls out agents on Monday. By Friday they have twice as many PRs, the same 40-minute flaky test suite, and a #help channel that's mostly "is CI broken or is it me?"</p>
+    </div>
+  </div>
+  <div data-slot="floater" class="slide-floater"><span class="src"><a href="https://dora.dev/research/2025/dora-report/">DORA 2025 report</a> · <a href="https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report">announcement</a> · <a href="https://getdx.com/news/dx-releases-q2-2026-state-of-ai-impact-in-engineering-report/">DX Q2 2026</a></span></div>
+  <div class="speaker-notes">
+    <p>DORA's 2025 State of AI-assisted Software Development report, nearly 5,000 respondents plus 100+ hours of interviews. 90% use AI at work, more than 80% believe it increased their productivity (a belief, not a measurement), and 30% have little or no trust in AI-generated code. AI adoption has a positive relationship with throughput and product performance, and a negative one with delivery stability.</p>
+    <p>DORA hasn't published a 2026 State of AI report yet, so 2025 is still the latest. DX Q2 2026 (500+ orgs, Jul 2026): AI-generated code is 52.7% of all code, median PRs per engineer per week went from 1.42 to 1.94 (+37%), and change confidence fell 6.1%.</p>
+    <p>Their headline is that AI is an amplifier, magnifying an organisation's existing strengths and weaknesses, and that the biggest returns come from the surrounding system (platform quality, clear workflows, team alignment) more than from which tool you picked.</p>
+    <p>Team B is made up, say so. Most people in the room will recognise it anyway.</p>
+    <p>Joke if it fits: &quot;If your deploy process was held together with duct tape, it's now held together with duct tape at ten times the speed.&quot;</p>
+  </div>
+</div>

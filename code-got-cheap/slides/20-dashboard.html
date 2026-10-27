@@ -1,0 +1,20 @@
+<div class="slide" data-layout="content">
+  <h1 data-slot="title">A dashboard I made up (but you've seen)</h1>
+  <div data-slot="body">
+    <div class="dash">
+      <div class="dash-tile up"><span class="dash-num">80%</span><span class="dash-lbl">of our code is AI-written 🎉</span></div>
+      <div class="dash-tile up"><span class="dash-num">3.1×</span><span class="dash-lbl">PRs merged per week 🚀</span></div>
+      <div class="dash-tile down"><span class="dash-num">↑</span><span class="dash-lbl">incidents (on a different dashboard)</span></div>
+      <div class="dash-tile down"><span class="dash-num">↑</span><span class="dash-lbl">reviewer burnout (not tracked)</span></div>
+    </div>
+    <p class="lead step">Real data: each change is getting much safer. With heavy AI use, incidents per PR were up 242.7% in April and only 14.5% by October. There are far more changes, though, so monthly incidents are still up 125%.</p>
+  </div>
+  <div data-slot="floater" class="slide-floater"><div class="stamp">ILLUSTRATION · NOT REAL DATA</div><span class="src"><a href="https://www.faros.ai/blog/the-speed-trap-facing-software-teams-is-what-token-engineering-was-designed-to-solve">Faros AI, Oct 2026</a></span></div>
+  <div class="speaker-notes">
+    <p>Be very clear out loud: these numbers are invented. It's a cartoon of a dashboard and doesn't come from any real company.</p>
+    <p>The top row is what's easy to measure. The bottom row is what we tend not to measure yet. Keep it light, the joke is on dashboards in general.</p>
+    <p>Then click for the real data, which is the good news: Faros AI Q3 2026 (22,000 devs, 4,000 teams) found incidents per PR up 14.5% under high AI adoption, compared with 242.7% in their previous report (Apr 2026). Both are increases, so incidents per PR are still higher with heavy AI use, but the extra amount has shrunk from about 3.4× to about 1.15×. Faros doesn't say whether the two reports used the same sample, so call it a trend across their reports, not a controlled comparison. Teams are adapting. Vendor data, say so if asked.</p>
+    <p>Same report: &quot;Each change is safer, and there are far more of them.&quot; Monthly incidents are up 125.4%, PRs merged with no review at all are up 76.3%, time in QA is up 300.6%. So the win is per change, and the open problem is volume, which is the review capacity point again.</p>
+    <p>Why it improved: Faros doesn't say. My interpretation, label it as that: newer models make fewer basic mistakes than early-2026 ones, teams have added guardrails (CI checks, AI-use policies like Ghostty's), and AI-assisted review is spreading (JetBrains 2026: 43% of developers are ready to fully delegate code review, up from 33%). It's probably all three.</p>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="slide" data-layout="content">
+  <h1 data-slot="title">The &quot;almost right&quot; problem</h1>
+  <div data-slot="body">
+    <div class="stats-grid">
+      <div class="stat-box"><span class="stat-number">83%</span><span class="stat-label">of developers use at least one AI tool</span></div>
+      <div class="stat-box"><span class="stat-number">48%</span><span class="stat-label">trust its output when they can easily verify it. Only 7% trust it with important decisions.</span></div>
+      <div class="stat-box"><span class="stat-number">65%</span><span class="stat-label">regularly spend time correcting AI output</span></div>
+    </div>
+    <ul class="tight">
+      <li>Only 10% use AI answers as-is. Most run the code locally (76%) or check it against the codebase (64%).</li>
+      <li>In 2025, 66% named answers that are &quot;almost right, but not quite&quot; as a frustration. The 2026 survey didn't ask.</li>
+    </ul>
+    <div class="example step">
+      <div class="ex-label">Me, recently</div>
+      <p>The agent called <code>client.retryWithBackoff()</code>, with a great name, sensible arguments and exactly the behaviour I wanted. The method doesn't exist. I spent 15 minutes searching the docs for it before I thought to check.</p>
+    </div>
+  </div>
+  <div data-slot="floater" class="slide-floater"><span class="src"><a href="https://survey.stackoverflow.co/2026/ai">Stack Overflow 2026</a> · <a href="https://survey.stackoverflow.co/2025/ai">2025</a> · <a href="https://www.atlassian.com/blog/development/developer-experience-report-2026">Atlassian DevEx 2026</a></span></div>
+  <div class="speaker-notes">
+    <p>Stack Overflow 2026 (Oct 6 2026, 30,903 responses): 83% use at least one AI tool and 73% of those use it daily. On trust, 48% trust the output &quot;when I can easily verify the output&quot;, and only 6.6% trust it for many tasks including important decisions. Only 10% use answers as-is: 76% run it locally, 64% compare with the codebase, 53% check tests or security. Sentiment is 62% favourable, 71% among daily users.</p>
+    <p>The 2026 survey changed its questions, so there's no 2026 version of the &quot;almost right&quot; or trust-in-accuracy items. In 2025: 66% &quot;almost right, but not quite&quot;, 45% debugging AI code takes longer, 46% distrust vs 33% trust. Don't compare the 2025 33% with the 2026 overview's &quot;87% some trust&quot;, they're different questions.</p>
+    <p>Atlassian State of DevEx 2026 (Oct 20): 65% of developers regularly spend time correcting AI output, and 87% say AI helps them ship faster.</p>
+    <p>Obviously wrong code tends to fail quickly, so we catch it. Almost-right code often passes the tests we wrote and breaks on a case we didn't think of, which is a lot harder to spot in review.</p>
+    <p>The retryWithBackoff story is a template (a hallucinated method with a very plausible name is a common one). Swap in a real one of mine if I have it.</p>
+    <p>Joke if it fits: &quot;It's the coworker who's right 90% of the time and has no idea which 90%.&quot;</p>
+  </div>
+</div>

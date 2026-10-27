@@ -1,0 +1,73 @@
+theme: default
+title: Code Got Cheap
+slides:
+    - id: sl_40d0107c
+      file: 01-title.html
+    - id: sl_82503b49
+      file: 35-closing.html
+    - id: sl_94f7360c
+      file: 02-cold-open.html
+    - id: sl_024fef6d
+      file: 03-honest-moment.html
+    - id: sl_9433b1bc
+      file: 04-thesis.html
+    - id: sl_f369160f
+      file: 05-what-changed.html
+    - id: sl_a38f722b
+      file: 06-three-eras.html
+    - id: sl_e4b1ce94
+      file: 08-perception-gap.html
+    - id: sl_f934e587
+      file: 09-almost-right.html
+    - id: sl_4eb50c25
+      file: 10-amplifier.html
+    - id: sl_4b35a682
+      file: 11-teams.html
+    - id: sl_0fde2320
+      file: 12-ten-x-pr.html
+    - id: sl_43f13bae
+      file: 13-ownership.html
+    - id: sl_018520fe
+      file: 14-agents-on-team.html
+    - id: sl_55aa6f38
+      file: 16-junior-pipeline.html
+    - id: sl_3135ee82
+      file: 18-metrics.html
+    - id: sl_1bcc90ed
+      file: 19-loc-is-back.html
+    - id: sl_704802b7
+      file: 20-dashboard.html
+    - id: sl_90b2e8f5
+      file: 21-measure-system.html
+    - id: sl_be249491
+      file: 23-hiring.html
+    - id: sl_c4a0bd30
+      file: 24-market-split.html
+    - id: sl_097dc744
+      file: 25-bots-interviewing-bots.html
+    - id: sl_e930211c
+      file: 26-new-interview.html
+    - id: sl_0e4b2a9d
+      file: 27-show-judgment.html
+    - id: sl_c346d2f7
+      file: 30-careers.html
+    - id: sl_aa6a13dd
+      file: 31-monday.html
+    - id: sl_546eced7
+      file: 32-juniors-seniors.html
+    - id: sl_24705e09
+      file: 33-thesis-callback.html
+    - id: sl_08e73862
+      file: 34-sources.html
+    - id: sl_faa66f28
+      file: 15-obligatory-cartoon.html
+    - id: sl_817bd77c
+      file: 07-spectrum.html
+    - id: sl_44ec3cbb
+      file: 28-for-leaders.html
+    - id: sl_50798137
+      file: 17-land-teams.html
+    - id: sl_66346535
+      file: 22-land-metrics.html
+    - id: sl_82adca9c
+      file: 29-land-hiring.html

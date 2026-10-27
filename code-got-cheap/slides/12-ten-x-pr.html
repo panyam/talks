@@ -1,0 +1,56 @@
+<div class="slide" data-layout="content">
+  <h1 data-slot="title">Meet the 10x PR</h1>
+  <div data-slot="body">
+    <div class="commits">
+      <div class="commit-col">
+        <div class="commit-year">2019</div>
+        <div class="term commit"><span class="prompt">$</span> git log -1
+<span class="sha">commit 3f9a1c0</span>
+
+    fixed login
+
+<span class="stat"> 1 file changed, <span class="add">+3</span> <span class="del">−1</span></span></div>
+      </div>
+      <div class="commit-col step">
+        <div class="commit-year">2026</div>
+        <div class="term commit"><span class="prompt">$</span> git log -1
+<span class="sha">commit a91f3c2</span>
+
+    fix(auth): resolve race condition in session token refresh
+
+    ## Summary
+    Concurrent refresh requests could invalidate a freshly
+    issued token, causing intermittent logouts.
+
+    ## Changes
+    - Serialise refresh with a per-user mutex
+    - Exponential backoff with jitter (base 200ms, max 3s)
+    - 14 new tests for concurrent login flows
+
+    ## Context
+    Written over a flat white and a cinnamon bun ☕🥐
+    Mood: optimistic. Confidence: very high.
+
+<span class="stat"> 63 files changed, <span class="add">+4,212</span> <span class="del">−1,087</span></span></div>
+      </div>
+    </div>
+    <ul class="tight">
+      <li>Teams with high AI adoption saw median time in review go up 441%.</li>
+      <li>AI-generated PRs wait 4.6× longer before anyone picks them up.</li>
+    </ul>
+    <div class="voice step">
+      <blockquote>"No engineer can keep up with 5-10 times more code to review, so most don't thoroughly review the code."</blockquote>
+      <div class="sp-who"><a href="https://newsletter.pragmaticengineer.com/p/the-state-of-the-tech-industry-in">Gergely Orosz</a>, The Pragmatic Engineer, Oct 2026</div>
+    </div>
+  </div>
+  <div data-slot="floater" class="slide-floater"><span class="src"><a href="https://faros.ai/blog/ai-acceleration-whiplash-takeaways">Faros AI, Apr 2026</a> · <a href="https://linearb.io/resources/engineering-benchmarks-report">LinearB 2026 benchmarks</a></span></div>
+  <div class="speaker-notes">
+    <p>Two clicks: the 2026 commit, then the Orosz quote. Read &quot;fixed login&quot; deadpan first, then reveal the 2026 one and let people read it. The flat white and the 63 files are the two laughs.</p>
+    <p>The point under the joke: the commit message got a lot better, which is real progress. The diff also got 1,000 times bigger, and a reviewer still has to read it. Big diffs tend to get skimmed and approved with an &quot;LGTM&quot;.</p>
+    <p>Everyone has seen this PR. Many of us have opened this PR. I have opened this PR.</p>
+    <p>Data: Faros AI &quot;Acceleration Whiplash&quot; (Apr 2026), comparing each org's low- and high-AI periods: median time to first review +156.6%, median time in review +441.5%, while task throughput per developer rose 33.7%. LinearB 2026 benchmarks (8.1M PRs): AI PRs wait 4.6× longer before review but are reviewed 2× faster once picked up. Both are vendors, so say &quot;vendor data&quot; if asked.</p>
+    <p>Armin Ronacher said the same thing in February: &quot;Historically, writing code was slower than reviewing code.&quot; … &quot;I was the bottleneck all along.&quot;</p>
+    <p>Practical bits for teams: keep PRs small even when the agent can make them big, ask the author (human or agent) to explain the change, and lean on tests and CI to do the boring checks so humans review intent and design.</p>
+    <p>Line to land: &quot;When you plan the work, plan for the reviewer's time too.&quot;</p>
+  </div>
+</div>

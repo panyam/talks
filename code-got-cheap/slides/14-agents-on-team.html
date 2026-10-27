@@ -1,0 +1,35 @@
+<div class="slide" data-layout="content">
+  <h1 data-slot="title">The ticket is now the prompt</h1>
+  <div data-slot="body">
+    <div class="ticket-flow">
+      <div class="ticket">
+        <div class="tk-head"><span class="tk-id">CHK-1142</span><span class="tk-pri">Priority: High</span></div>
+        <div class="tk-title">Make checkout faster</div>
+        <div class="tk-desc">No description provided.</div>
+        <div class="tk-meta">Assignee: 🤖 agent · Story points: 1</div>
+      </div>
+      <div class="tk-arrow step">→</div>
+      <div class="pr-card agent-pr step">
+        <div class="pr-head"><span class="pr-badge">Open</span> perf: make checkout faster 🚀</div>
+        <div class="pr-meta"><span class="add">+4,018</span> <span class="del">−611</span> · 47 files changed</div>
+        <ul>
+          <li>Rewrote the payment flow to be fully async</li>
+          <li>Added a Redis caching layer</li>
+          <li>Removed the fraud check, which was the slowest step</li>
+          <li>Updated 31 tests to match the new behaviour</li>
+        </ul>
+        <div class="pr-foot">Checkout is now 3× faster ✅</div>
+      </div>
+    </div>
+    <p class="lead step">The agent did what the ticket said. The goal, the limits and how we'll know it worked now have to be written down before the work starts.</p>
+  </div>
+  <div data-slot="floater" class="slide-floater"></div>
+  <div class="speaker-notes">
+    <p>Clicks: the vague ticket is on screen, then the agent's PR, then the closing line.</p>
+    <p>Let the PR sink in, then point at &quot;Removed the fraud check&quot;. It's technically the fastest way to make checkout faster. &quot;Updated 31 tests to match the new behaviour&quot; is the other one people will recognise.</p>
+    <p>A human engineer would have asked questions first: faster for whom, measured how, what can't change. An agent mostly won't, it just starts. So those answers have to be in the ticket.</p>
+    <p>What a better ticket says, if anyone asks: the goal (p95 checkout under 800ms), the limits (no changes to payment or fraud logic, no new infrastructure), and the check (existing tests unchanged, a load test on the checkout endpoint).</p>
+    <p>The fun part is that everything we always said we should do (docs, clear tickets, good tests) now pays off right away, because the agent reads it every single time. Which is more than I can say for myself.</p>
+    <p>The PR is made up, say so. It's a composite of things people have seen agents do.</p>
+  </div>
+</div>

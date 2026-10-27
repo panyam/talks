@@ -1,0 +1,67 @@
+<div class="slide" data-layout="two-col">
+  <h1 data-slot="title">Lines of code is back, baby</h1>
+  <div class="loc-grid">
+    <div class="loc-art">
+      <svg viewBox="0 0 260 300" role="img" aria-label="A cheerful page of code labelled LINES OF CODE bursts through a door marked 1985, arms raised, shouting I'm back, baby!">
+        <g class="door">
+          <rect x="30" y="70" width="110" height="210" class="ink fill-door"/>
+          <rect x="40" y="80" width="56" height="24" rx="3" class="ink fill-paper"/>
+          <text x="68" y="98" class="door-sign">1985</text>
+          <path d="M226 176 l20 -8 l-4 18 z" class="ink fill-door"/>
+          <path d="M232 222 l18 6 l-14 12 z" class="ink fill-door"/>
+          <path d="M140 70 l0 210" class="ink thick-crack"/>
+        </g>
+        <path d="M150 128 q10 -6 18 0 M150 250 q12 6 22 0 M232 150 q8 8 4 18" class="ink thin"/>
+        <g class="loc-guy">
+          <path d="M128 112 h76 l18 18 v122 h-94 z" class="ink fill-paper"/>
+          <path d="M204 112 v18 h18" class="ink"/>
+          <text x="175" y="214" class="loc-label">LINES OF</text>
+          <text x="175" y="228" class="loc-label">CODE</text>
+          <line x1="142" y1="236" x2="206" y2="236" class="code-ln"/><line x1="142" y1="243" x2="190" y2="243" class="code-ln"/>
+          <circle cx="160" cy="150" r="6" class="dot"/><circle cx="190" cy="150" r="6" class="dot"/>
+          <circle cx="162" cy="148" r="2" class="fill-paper"/><circle cx="192" cy="148" r="2" class="fill-paper"/>
+          <path d="M152 168 q23 30 46 0 z" class="ink fill-mouth"/>
+          <path d="M128 150 l-18 -50 M110 100 l-9 -4 M110 100 l1 -10" class="ink"/>
+          <path d="M222 150 l26 -44 M248 106 l8 -4 M248 106 l0 -10" class="ink"/>
+          <line x1="152" y1="252" x2="140" y2="284" class="ink"/><line x1="196" y1="252" x2="212" y2="284" class="ink"/>
+          <path d="M140 284 h-12 M212 284 h12" class="ink"/>
+        </g>
+        <g class="bubble">
+          <rect x="96" y="14" width="156" height="44" rx="20" class="ink fill-paper"/>
+          <path d="M160 58 l4 16 l14 -16" class="ink fill-paper"/>
+          <text x="174" y="43" class="shout">I'm back, baby!</text>
+        </g>
+        <g class="confetti"><circle cx="70" cy="40" r="3"/><circle cx="40" cy="58" r="2.5"/><circle cx="250" cy="90" r="3"/><circle cx="236" cy="200" r="2.5"/><rect x="58" y="22" width="5" height="5" transform="rotate(30 60 24)"/><rect x="240" y="236" width="5" height="5" transform="rotate(20 242 238)"/></g>
+        <line x1="10" y1="284" x2="250" y2="284" class="ink"/>
+      </svg>
+    </div>
+    <div class="col step" data-slot="left">
+      <h2>Activity metrics</h2>
+      <ul class="neutral-list">
+        <li>Lines of code written</li>
+        <li>% of code written by AI</li>
+        <li>Suggestion acceptance rate</li>
+        <li>PRs opened per engineer</li>
+      </ul>
+    </div>
+    <div class="col step" data-slot="right">
+      <h2>Outcome metrics</h2>
+      <ul class="good-list">
+        <li>Lead time to production</li>
+        <li>Change failure rate</li>
+        <li>Rework: code rewritten within weeks</li>
+        <li>Time PRs wait for review</li>
+        <li>Incidents and recovery time</li>
+      </ul>
+    </div>
+  </div>
+  <div data-slot="floater" class="slide-floater"></div>
+  <div class="speaker-notes">
+    <p>Open on the cartoon and let the title do the work. Two clicks: activity metrics, then outcome metrics.</p>
+    <p>The cartoon is an original homage to the Seinfeld &quot;I'm back, baby!&quot; meme (George Costanza). If I want the real still, swap in an image I've sourced myself, the SVG sits in the .loc-art box.</p>
+    <p>Framing: the left column is fine to track, it tells you adoption is happening. It just shouldn't be the target on its own, because AI makes it very cheap to move. Goodhart's law: when a measure becomes a target, it stops being a good measure. Pair each activity number with an outcome from the right.</p>
+    <p>Atlassian DevEx 2026: 60% of developers say AI usage is treated as a productivity signal where they work. Worth mentioning neutrally, not as a criticism.</p>
+    <p>Joke: &quot;Measuring developer productivity by lines of code was a bad idea in 1985. Measuring it by lines of code the robot wrote is the same idea, just with a bigger number.&quot;</p>
+    <p>Reminder of the perception gap: self-reported &quot;I feel faster&quot; surveys have the same problem.</p>
+  </div>
+</div>

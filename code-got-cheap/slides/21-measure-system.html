@@ -1,0 +1,68 @@
+<div class="slide" data-layout="content">
+  <h1 data-slot="title">What to measure instead</h1>
+  <div data-slot="body">
+    <div class="eras measure">
+      <div class="phase-box">
+        <svg class="icon-art" viewBox="0 0 220 120" role="img" aria-label="A snail carrying a pull request on its shell, labelled in review">
+          <line x1="10" y1="108" x2="210" y2="108" class="ink"/>
+          <path d="M40 106 q-14 0 -14 -10 q0 -6 8 -6 h96 q10 0 10 10 q0 6 -10 6 z" class="ink fill-snail"/>
+          <path d="M130 92 q8 -30 -4 -44 M138 92 q14 -26 10 -46" class="ink"/>
+          <circle cx="126" cy="46" r="4" class="dot"/><circle cx="148" cy="44" r="4" class="dot"/>
+          <circle cx="80" cy="62" r="32" class="ink fill-shell"/>
+          <path d="M80 62 m-18 0 a18 18 0 1 0 18 -18 a12 12 0 1 0 12 12" class="ink thin"/>
+          <rect x="52" y="14" width="66" height="26" rx="4" class="ink fill-paper"/>
+          <text x="85" y="31" class="tag">PR #2046</text>
+          <line x1="85" y1="40" x2="85" y2="48" class="ink"/>
+          <text x="180" y="66" class="small-note">in review</text>
+          <text x="180" y="80" class="small-note">since Tues</text>
+          <path d="M14 96 h10 M8 90 h12 M18 84 h6" class="ink thin"/>
+        </svg>
+        <h3>Flow</h3><p>How long from idea to production? Where does work wait?</p>
+      </div>
+      <div class="phase-box">
+        <svg class="icon-art" viewBox="0 0 220 120" role="img" aria-label="A pull request with a big green LGTM stamp and a small bug peeking out from under the corner">
+          <rect x="50" y="10" width="120" height="98" rx="4" class="ink fill-paper"/>
+          <line x1="64" y1="28" x2="140" y2="28" class="code-ln"/><line x1="64" y1="40" x2="152" y2="40" class="code-ln"/>
+          <line x1="64" y1="52" x2="126" y2="52" class="code-ln"/><line x1="64" y1="64" x2="146" y2="64" class="code-ln"/>
+          <g transform="rotate(-12 110 80)">
+            <rect x="68" y="66" width="86" height="30" rx="5" class="stamp-box"/>
+            <text x="111" y="88" class="stamp-text">LGTM ✓</text>
+          </g>
+          <g class="bug">
+            <ellipse cx="172" cy="104" rx="12" ry="8" class="ink fill-bug"/>
+            <circle cx="166" cy="102" r="2" class="fill-paper"/><circle cx="174" cy="101" r="2" class="fill-paper"/>
+            <path d="M166 96 l-4 -8 M176 96 l4 -8 M184 104 l8 -2 M184 108 l8 4" class="ink thin"/>
+            <path d="M164 108 q6 3 12 0" class="ink thin"/>
+          </g>
+        </svg>
+        <h3>Quality</h3><p>How often do changes break things? How much gets rewritten?</p>
+      </div>
+      <div class="phase-box">
+        <svg class="icon-art" viewBox="0 0 220 120" role="img" aria-label="A tired reviewer slumped behind a stack of pull requests with four empty coffee cups, saying just one more">
+          <line x1="10" y1="96" x2="210" y2="96" class="ink"/>
+          <rect x="30" y="56" width="58" height="40" class="ink fill-paper"/><rect x="34" y="40" width="54" height="16" class="ink fill-paper"/><rect x="28" y="24" width="56" height="16" class="ink fill-paper"/>
+          <text x="58" y="78" class="tag">PRs</text>
+          <circle cx="114" cy="56" r="14" class="ink fill-paper"/>
+          <path d="M106 54 h6 M118 54 h6" class="ink"/>
+          <path d="M108 63 q6 -2 12 0" class="ink"/>
+          <path d="M114 70 v18 M114 76 l-18 8 M114 76 l20 10" class="ink"/>
+          <g class="cups">
+            <path d="M148 80 h14 l-2 16 h-10 z" class="ink fill-paper"/><path d="M166 80 h14 l-2 16 h-10 z" class="ink fill-paper"/>
+            <path d="M184 80 h14 l-2 16 h-10 z" class="ink fill-paper"/><path d="M157 64 h14 l-2 16 h-10 z" class="ink fill-paper"/>
+          </g>
+          <rect x="128" y="8" width="84" height="26" rx="12" class="ink fill-paper"/>
+          <path d="M136 34 l-8 12 l16 -12" class="ink fill-paper"/>
+          <text x="170" y="25" class="small-note">just one more…</text>
+        </svg>
+        <h3>People</h3><p>Are reviewers drowning? Are juniors learning? Ask them.</p>
+      </div>
+    </div>
+    <div class="highlight">A useful sanity check for any productivity number: did customers notice?</div>
+  </div>
+  <div data-slot="floater" class="slide-floater"></div>
+  <div class="speaker-notes">
+    <p>The pictures are there for a smile, don't explain them. The snail's PR has been &quot;in review since Tues&quot;, and the bug is hiding under the LGTM stamp.</p>
+    <p>DORA's four keys still work: deployment frequency, lead time, change failure rate, time to restore. Add rework and review wait time for the AI era.</p>
+    <p>For individual contributors: if your company tracks &quot;% AI usage&quot;, these are the outcome numbers to put next to it. Managers usually just want a number they can defend.</p>
+  </div>
+</div>

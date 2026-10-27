@@ -1,0 +1,27 @@
+<div class="slide" data-layout="content">
+  <h1 data-slot="title">The perception gap</h1>
+  <div data-slot="body">
+    <div class="stats-grid">
+      <div class="stat-box"><span class="stat-number">−24%</span><span class="stat-label">time developers <em>expected</em> to save</span></div>
+      <div class="stat-box"><span class="stat-number">−20%</span><span class="stat-label">time they <em>felt</em> they saved</span></div>
+      <div class="stat-box"><span class="stat-number">+19%</span><span class="stat-label">time it <em>actually</em> took</span></div>
+    </div>
+    <ul class="tight">
+      <li>Early 2025: 16 experienced developers, 246 real tasks on their own large open-source repos, each randomly assigned AI or no AI.</li>
+      <li>The 2026 follow-up suggests speedups are now likely, but the data was too noisy to say how big. Part of the problem was that a lot of developers refused to take part if it meant working without AI.</li>
+      <li>In METR's May 2026 survey, developers self-reported a median 3× speed-up, which METR says is &quot;not necessarily grounded in reality&quot;.</li>
+    </ul>
+    <div class="example step">
+      <div class="ex-label">Me, last Tuesday</div>
+      <p>"The agent did that refactor in 10 minutes!" It did, and then I spent 40 minutes reading the diff, 20 fixing the tests it had helpfully "updated", and 5 on the revert. I still told everyone it took 10 minutes.</p>
+    </div>
+  </div>
+  <div data-slot="floater" class="slide-floater"><span class="src"><a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/">METR, Jul 2025</a> · <a href="https://metr.org/blog/2026-02-24-uplift-update/">METR update, Feb 2026</a> · <a href="https://metr.org/blog/2026-05-11-ai-usage-survey/">METR survey, May 2026</a></span></div>
+  <div class="speaker-notes">
+    <p>METR, early 2025: 16 experienced devs from large open-source repos, 246 issues averaging about two hours each, mostly Cursor Pro with Claude 3.5/3.7 Sonnet. With AI allowed they took 19% longer (CI +2% to +39%), while forecasting a 24% speedup beforehand and still estimating 20% afterwards.</p>
+    <p>METR's Feb 2026 update: 57 developers, 800+ tasks. Point estimates are about 18% faster for returning developers (CI −38% to +9%) and 4% faster for new recruits (CI −15% to +9%). METR's own read is that speedups are now likely but their data is an unreliable signal, mainly because many developers didn't want to work without AI for the control tasks. The pay also dropped from $150 to $50 an hour.</p>
+    <p>METR's May 2026 survey (349 technical workers, Feb–Apr 2026): median self-reported speed change 3×, median 1.4–2× change in the value of their work. METR's own caveat is that &quot;survey results are not necessarily grounded in reality&quot;, and METR's own staff gave the lowest answers of any group.</p>
+    <p>So the slowdown number is out of date and I should say that out loud. What still holds is that how fast we feel is a poor guide, and METR says self-reports were unreliable. That sets up the metrics section.</p>
+    <p>The &quot;last Tuesday&quot; story is a template. Swap in a real one of my own before the talk, it lands better if it's true.</p>
+  </div>
+</div>

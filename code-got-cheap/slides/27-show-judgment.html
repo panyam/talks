@@ -1,0 +1,39 @@
+<div class="slide" data-layout="content">
+  <h1 data-slot="title">What judgment looks like in an AI-allowed interview</h1>
+  <div data-slot="body">
+    <div class="transcript">
+      <div class="tx-row step">
+        <div class="tx-msg you"><span class="who">You</span>I'll ask it for a rate limiter, and tell it to use our existing Redis client so it doesn't invent a new one.</div>
+        <div class="tx-tag"><b>1</b> Say what you're asking, and why</div>
+      </div>
+      <div class="tx-row step">
+        <div class="tx-msg ai"><span class="who">AI</span>Great question! Here's a production-ready, enterprise-grade token bucket. I've also added <code>left-pad-ultra</code> for robustness. 🚀</div>
+        <div class="tx-tag empty"></div>
+      </div>
+      <div class="tx-row step">
+        <div class="tx-msg you"><span class="who">You</span>This mostly looks right, but it doesn't handle an empty bucket at startup.</div>
+        <div class="tx-tag"><b>2</b> Read it out loud, critically</div>
+      </div>
+      <div class="tx-row step">
+        <div class="tx-msg you"><span class="who">You</span>I'm dropping the new dependency. We don't need it, and every one is something to maintain.</div>
+        <div class="tx-tag"><b>3</b> Reject something, and say why</div>
+      </div>
+      <div class="tx-row step">
+        <div class="tx-msg you"><span class="who">You</span>Before we go on, how would we know it works? Let me write a test for a burst of requests.</div>
+        <div class="tx-tag"><b>4</b> Test it before they ask</div>
+      </div>
+      <div class="tx-row step">
+        <div class="tx-msg you"><span class="who">You</span>This last bit is three lines, I'll just write it myself.</div>
+        <div class="tx-tag"><b>5</b> Know when to turn it off</div>
+      </div>
+    </div>
+    <div class="interviewer-note step">Interviewer's notes: <em>"Would trust them to merge."</em></div>
+  </div>
+  <div data-slot="floater" class="slide-floater"></div>
+  <div class="speaker-notes">
+    <p>This is the most practical slide for job seekers. Slow down here. Seven clicks: one per line of the transcript, then the interviewer's note.</p>
+    <p>Read the candidate lines in a normal voice and the AI line in an over-eager one. left-pad-ultra is made up, the original left-pad is the npm package whose removal broke a lot of builds in 2016, so some people will get the joke.</p>
+    <p>The five moves: say what you're asking and why (your prompt is part of your answer), read the output critically and out loud, reject something and explain it, test before they ask, and know when the tool isn't worth it.</p>
+    <p>What the interviewer is really trying to work out is whether they'd trust you to merge code into their repo. That's the note at the bottom.</p>
+  </div>
+</div>
